@@ -1,0 +1,14 @@
+{
+  "name": "uswds-color-picker",
+  "version": "1.0.0",
+  "description": "a color picker for USWDS v2",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "author": "Brian Seel",
+  "license": ""
+}
