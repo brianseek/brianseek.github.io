@@ -1,0 +1,14 @@
+{
+  "name": "brian-stuff",
+  "version": "1.0.0",
+  "description": "a place for some stuff",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "author": "Brian Seek",
+  "license": ""
+}
