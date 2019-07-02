@@ -1,0 +1,41 @@
+.links-area {
+  display: flex;
+  max-width: 800px;
+  margin: 150px auto 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  .image {
+    padding: 10px;
+    img {
+      max-width: 320px;
+      height: auto;
+    }
+  }
+  .links {
+    padding: 40px;
+    border-radius: 20px/60px;
+    background: #5dfdc8;
+    > a {
+      font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+      display: block;
+      margin: 10px 0;
+      padding: 20px;
+      position: relative;
+      box-shadow:
+              1px 1px #0fa775,
+              2px 2px #0fa775,
+              3px 3px #0fa775;
+      transition: all 0.1s ease-in;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: #13d494;
+      &:active,
+      &:hover {
+        box-shadow: none;
+        top: 3px;
+        left: 3px;
+      }
+    }
+  }
+}
