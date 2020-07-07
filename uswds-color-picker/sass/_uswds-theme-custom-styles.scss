@@ -20,6 +20,9 @@ i.e.
 ----------------------------------------
 */
 
+body {
+  margin: 8px;
+}
 // Default divs to blank background color. Anything more specific overrides USWDS utility class. ¯\_(ツ)_/¯
 div {
   background-color: #dddddd;
