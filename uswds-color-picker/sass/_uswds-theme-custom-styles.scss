@@ -21,7 +21,8 @@ i.e.
 */
 
 body {
-  margin: 8px;
+  margin: 8px 8px 80px;
+  background-image: url("../images/clean-textile.png");
 }
 // Default divs to blank background color. Anything more specific overrides USWDS utility class. ¯\_(ツ)_/¯
 div {
@@ -51,13 +52,18 @@ div {
       flex: 1 1 100%;
       padding: 10px;
       background-color: #fff;
-
       > div {
-        height: 150px;
+        height: 172px;
         width: 150px;
-        border: 1px solid transparent;
+        border: 0 none;
         margin: 0 auto;
         background-color: #fff;
+        .info {
+          background-color: #fff;
+          padding: 2px;
+          width: 100%;
+          text-align: center;
+        }
       }
 
       input {
@@ -73,14 +79,25 @@ div {
     }
   }
 }
+main {
+  margin: 10px auto;
+  width: 85%;
+}
 .color-family {
-  background-color: #fff;
+  background-color: transparent;
+  border: 2px dashed color("gray-30");
+  border-radius: 15px;
+  padding: 0 20px 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  max-width: 940px;
+  cursor: grab;
   .row {
     display: flex;
     flex-wrap: nowrap;
-    background-color: #fff;
+    background-color: transparent;
     > div {
-      height: 32px;
+      height: 64px;
       flex: 0 0 64px;
       border: 1px solid #dddddd;
     }
@@ -88,17 +105,38 @@ div {
     &.vivid {
       > div {
         cursor: pointer;
+        &.selected {
+          border: 3px solid color("blue-50v");
+          &[class*="blue"],
+          &[class*="cyan"],
+          &[class*="indigo"] {
+            border: 3px solid color("red-50v")
+          }
+        }
       }
     }
     &.number {
       > div {
         height: auto;
         border: 1px solid transparent;
-        background-color: #fff;
+        background-color: color("gray-cool-4");
+        padding: 2px;
       }
     }
     &.v > div:after {
       content: 'v';
     }
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px;
+  width: 100%;
+  color: #fff;
+  background-color: color('gray-warm-70');
+  a {
+    color: #fff;
   }
 }
