@@ -31,3 +31,7 @@ $(document).ready(function(){
     $(".original-color").css("background-color", $(this).val());
   });
 });
+
+function getColors() {
+
+}

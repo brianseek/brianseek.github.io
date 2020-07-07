@@ -1,0 +1,101 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
+
+// Default divs to blank background color. Anything more specific overrides USWDS utility class. ¯\_(ツ)_/¯
+div {
+  background-color: #dddddd;
+}
+.color-compare {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 350px;
+  border: 1px solid;
+  overflow: hidden;
+  background-color: #fff;
+  .version {
+    width: 100%;
+    background-color: color("blue-50v");
+    color: #fff;
+    padding: 2px 5px;
+    border-bottom: 1px solid black;
+  }
+  .box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    > div {
+      flex: 1 1 100%;
+      padding: 10px;
+      background-color: #fff;
+
+      > div {
+        height: 150px;
+        width: 150px;
+        border: 1px solid transparent;
+        margin: 0 auto;
+        background-color: #fff;
+      }
+
+      input {
+        margin: 5px auto 0;
+        display: block;
+        width: 100%;
+      }
+
+      span {
+        display: block;
+        margin: 5px auto;
+      }
+    }
+  }
+}
+.color-family {
+  background-color: #fff;
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    > div {
+      height: 32px;
+      flex: 0 0 64px;
+      border: 1px solid #dddddd;
+    }
+    &.colors,
+    &.vivid {
+      > div {
+        cursor: pointer;
+      }
+    }
+    &.number {
+      > div {
+        height: auto;
+        border: 1px solid transparent;
+        background-color: #fff;
+      }
+    }
+    &.v > div:after {
+      content: 'v';
+    }
+  }
+}
