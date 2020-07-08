@@ -12,9 +12,8 @@
 
 @import "uswds-theme-custom-settings";
 
-@import "uswds";
-
-// -------------------------------------
-// Import theme custom styles
+@import 'packages/required';
+@import 'packages/global';
+@import 'packages/uswds-utilities';
 
 @import "uswds-theme-custom-styles";
